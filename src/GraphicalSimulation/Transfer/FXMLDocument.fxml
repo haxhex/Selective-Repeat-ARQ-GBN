@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--fxml for main graphical details-->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainpane" prefHeight="401.0" prefWidth="1028.0"
+            style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/9.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="GraphicalSimulation.Transfer.FXMLDocumentController">
+   <ImageView fitHeight="100.0" fitWidth="1000.0" layoutX="850.0" layoutY="578.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@third.jpg"/>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="1000.0" layoutX="712.0" layoutY="578.0" pickOnBounds="true"
+              preserveRatio="true" rotate="180.0">
+      <Image url="@third.jpg"/>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="1000.0" layoutX="534.0" layoutY="578.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@third.jpg"/>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="1000.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true"
+              rotate="180.0">
+      <Image url="@third.jpg"/>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="1000.0" layoutX="178.0" layoutY="578.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@third.jpg"/>
+   </ImageView>
+   <ImageView fitHeight="100.0" fitWidth="1000.0" layoutX="356.0" layoutY="578.0" pickOnBounds="true"
+              preserveRatio="true" rotate="180.0">
+      <Image url="@third.jpg"/>
+   </ImageView>
+   <ImageView fitHeight="600.0" fitWidth="1028.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@second.jpg"/>
+   </ImageView>
+   <ScrollPane fx:id="sp" layoutX="514.0" prefHeight="692.0" prefWidth="514.0" stylesheets="@scroll.css">
+      <Pane fx:id="drpane" prefHeight="692.0" prefWidth="513.0">
+         <Button fx:id="senderbt" ellipsisString="" layoutX="56.0" layoutY="40.0" mnemonicParsing="false"
+                 prefHeight="646.0" prefWidth="24.0"/>
+         <Button fx:id="recieverbt" ellipsisString="" layoutX="423.0" layoutY="40.0" mnemonicParsing="false"
+                 prefHeight="646.0" prefWidth="25.0"/>
+         <Label layoutX="24.0" layoutY="8.0" text="SENDER" textFill="#ff8500">
+            <font>
+               <Font name="TOXIA" size="24.0"/>
+            </font>
+         </Label>
+         <Label layoutX="382.0" layoutY="8.0" text="RECIEVER" textFill="#6200ff">
+            <font>
+               <Font name="TOXIA" size="24.0"/>
+            </font>
+         </Label>
+      </Pane>
+   </ScrollPane>
+   <AnchorPane fx:id="AP1" layoutX="6.0" prefHeight="77.0" prefWidth="508.0">
+      <TextField fx:id="timetxt" disable="true" layoutX="357.0" prefHeight="71.0" prefWidth="106.0">
+         <font>
+            <Font name="TOXIA" size="38.0"/>
+         </font>
+      </TextField>
+      <Label layoutX="215.0" prefHeight="71.0" prefWidth="115.0" text="Timer" textFill="WHITE">
+         <font>
+            <Font name="TOXIA" size="44.0"/>
+         </font>
+      </Label>
+      <Button fx:id="resume" ellipsisString="" mnemonicParsing="false" onAction="#resume" prefHeight="71.0"
+              prefWidth="198.0" text="Resume" textFill="#0fff0f" visible="false">
+         <font>
+            <Font name="TOXIA" size="38.0"/>
+         </font>
+      </Button>
+      <Button fx:id="strt" layoutX="-4.0" mnemonicParsing="false" onAction="#strt" prefHeight="71.0"
+              prefWidth="198.0" text="Start" textFill="#288005">
+         <font>
+            <Font name="TOXIA" size="38.0"/>
+         </font>
+      </Button>
+      <Button fx:id="stop" mnemonicParsing="false" onAction="#stop" prefHeight="71.0" prefWidth="198.0" text="Stop"
+              textFill="#e80c0c" visible="false">
+         <font>
+            <Font name="TOXIA" size="38.0"/>
+         </font>
+      </Button>
+   </AnchorPane>
+   <ScrollPane fx:id="scrlleft" layoutX="3.0" layoutY="73.0" prefHeight="618.0" prefWidth="508.0"
+               stylesheets="@scroll.css">
+      <Pane fx:id="canup" prefHeight="602.0" prefWidth="508.0" style="-fx-background-color: transparent;"/>
+   </ScrollPane>
+</AnchorPane>
